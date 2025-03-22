@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- From bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fonts.googleapis -->>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <select id="languageSelector" class="language-selector"> <!-- הגדרת כפתור התרגום -->
+        <option value="en">English</option>
+        <option value="he">Hebrew</option>
+        <option value="ar">Arabic</option>
+        <option value="ar">Russian</option>
+    </select>
+    <span class="material-symbols-outlined">g_translate</span> <!-- בחירת הסמל מתוך הגוגל פונת -->
+    <header> <!-- תוכן עליון -->
+        <h1><i><u>"Success Studios"</u></i></h1>
+        <h4><tt>Create Account Page</tt></h4>
+    </header>
+    <main> <!-- תוכן עיקרי -->
+        <form action="users.json" method="POST" id="login-form" class="p-3"> <!-- Post בשיטת json הגדרת ביצוע פעולה לפי ״אקשן״ - הכנסת הנתונים לקובץ ה -->
+            <div class="container"> <!-- inputs לצורך הכנסת מבני container הגדרת מבנה מסוג  -->
+                <div class="mb">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" placeholder="User Name"><br>
+                </div>
+                <div class="mb">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Example@gmail.com"><br>
+                </div>
+                <div class="mb">
+                <label for="email-validate">Validate Email:</label>
+                <input type="email" id="email-validate" name="email-validate" placeholder="Example@gmail.com"><br>
+                </div>
+                <div class="mb">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+                </div>
+                <div class="mb">
+                <label for="password-validate">Validate Password:</label>
+                <input type="password" id="password-validate" name="password-validate"><br>
+                </div>
+                <div class="mb">
+                <input type="submit" id="submit-button" class="btn btn-primary" value="Submit">
+                <input type="reset" id="reset-button" class="btn btn-secondary" value="Reset">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer> <!-- תוכן תחתית -->
+        © All rights reserved 2024
+    </footer>
+    <script src="script.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN

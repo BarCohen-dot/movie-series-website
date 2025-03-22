@@ -1,0 +1,84 @@
+* { /* כוכבית - משמע בחירת כול האובייקטים בדף */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body { /* עיצוב לגוף הדף */
+    font-family: Arial, sans-serif;
+    background-image: url(images/backendimageBody.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header, footer { /* עיצוב לחלק עליון וחלק תחתון לדפים */
+    background-color: #232121c5;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #1d1c1c;
+}
+
+form a {
+    color: #b0aeae;
+}
+
+main {
+    padding: 20px;
+}
+
+footer { /* דריסה של חלק תחתון לצורך מירכוז הטקסט שמאלה */
+    text-align: left;
+}
+
+.container, #login-form { /* container עיצוב למבנה ההתחברות שבדף הכניסה + עיצוב לאובייקטים שבתוך ה */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form, div { /* עיצוב למבנים הרגילים */
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(194, 194, 194, 0.5);
+}
+
+form input, div input { /* עיצוב להכנסת הנתונים שבתוך המבנים */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b4b1b1;
+    border-radius: 4px;
+}
+#submit-button, #reset-button { /* id עיצוב לכפתורים לפי בחירת  */
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #9d3c3c; /* צבע אדום */
+    cursor: pointer;
+    color: #f3f3f3; /* צבע הטקסט */
+    font-weight: bold; /* מודגש */
+}
+
+#submit-button:hover, #reset-button:hover { /* ביצוע מניפולציה של העכבר כאשר עומדים על הכפתורים הנבחרים */
+    background-color: #c24124; /* צבע אדום כאשר העכבר עובר על הלחצן */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] { /* עיצוב מבני הבלוקים של הכנסת הנתונים */
+    color: black;
+    background-color: #b4b1b1;
+    border: 1px solid #b4b1b1;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#languageSelector{ /* עיצוב כפתור התרגום */
+    background-color: #1d1c1cc8;
+    padding: 5px 30px 5px 10px;
+    border-radius: 5px;
+}
